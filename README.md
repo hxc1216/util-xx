@@ -1,13 +1,15 @@
 ## 安装
-
-`npm install utils-merge`
+```sh
+npm i util-xx
+```
 
 ## 使用
-
-`import * as util from "util-xx"`
-
+```sh
+import * as util from "util-xx"
+```
 
 ## 示例
-
-`console.log(uitl.hello())`
-`>Hello World!`
+```sh
+console.log(uitl.hello())
+>Hello World!
+```
