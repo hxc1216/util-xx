@@ -1,0 +1,23 @@
+{
+  "name": "util-xx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/utilx-cjs.js",
+  "module": "dist/utilx-es.js",
+  "unpkg": "dist/utilx-umd.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "rollup": "^3.20.6"
+  }
+}
