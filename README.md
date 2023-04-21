@@ -10,6 +10,6 @@ import * as util from "util-xx"
 
 ## 示例
 ```sh
-console.log(uitl.hello())
+console.log(util.hello())
 >Hello World!
 ```

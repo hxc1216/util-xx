@@ -1,14 +1,17 @@
 {
   "name": "util-xx",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "main": "dist/utilx-cjs.js",
-  "module": "dist/utilx-es.js",
-  "unpkg": "dist/utilx-umd.js",
+  "main": "dist/utilx.min.cjs.js",
+  "module": "dist/utilx.min.es.js",
+  "unpkg": "dist/utilx.min.umd.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +20,13 @@
     "@babel/core": "^7.21.4",
     "@babel/preset-env": "^7.21.4",
     "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-eslint": "^9.0.3",
     "@rollup/plugin-node-resolve": "^15.0.2",
-    "rollup": "^3.20.6"
+    "@rollup/plugin-terser": "^0.4.1",
+    "eslint": "^8.38.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "rollup": "^3.20.6",
+    "vitepress": "^1.0.0-alpha.73"
   }
 }

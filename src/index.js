@@ -1,9 +1,3 @@
-const hello = function () {
-  return "Hello World!";
-};
+import { throttle, debounce, deepClone } from "./tool/index";
 
-const a = () => {
-  console.log("箭头函数");
-};
-
-export { hello, a };
+export { throttle, debounce, deepClone };
