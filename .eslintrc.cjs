@@ -17,5 +17,7 @@ module.exports = {
     "import/no-extraneous-dependencies": ["error", { devDependencies: true }],
     "arrow-parens": "off", // 箭头函数参数必须带括号
     "guard-for-in": 0, // forin 警告
+    "no-useless-escape": 0, // 禁止不必要的转义字符
+    allowForLoopAfterthoughts: true, // 可使用 ++ --
   },
 };

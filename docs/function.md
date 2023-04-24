@@ -1,21 +1,30 @@
-# 数组常用方法
+# 函数常用方法
 
 
 <script setup>
 
   const arr = [
     {
-      fnName:"isArray",
-      name:"判断是否是Array",
+      fnName:"isFunction",
+      name:"是否是一个函数",
       list:[
-        {prop:"array",type:"Any",required:true,remark:""},
+        {prop:"fn",type:"Any",required:true,remark:""},
       ]
     },
     {
-      fnName:"arrayRef",
-      name:"数组去重",
+      fnName:"throttle",
+      name:"节流",
       list:[
-        {prop:"array",type:"Array",required:true,remark:""},
+        {prop:"fn",type:"Function",required:true,remark:""},
+        {prop:"delay",type:"Number",required:false,remark:"延迟时间"},
+      ]
+    },
+    {
+      fnName:"debounce",
+      name:"防抖",
+      list:[
+        {prop:"fn",type:"Function",required:true,remark:""},
+        {prop:"delay",type:"Number",required:false,remark:"延迟时间"},
       ]
     },
   ]

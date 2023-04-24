@@ -10,14 +10,14 @@ export default defineConfig({
       // { text: "start", link: "/" },
       // { text: "Examples", link: "/markdown-examples" },
     ],
-
     sidebar: [
       {
-        text: "Examples",
+        text: "Function Types",
         items: [
           { text: "string", link: "/string" },
           { text: "array", link: "/array" },
           { text: "object", link: "/object" },
+          { text: "function", link: "/function" },
           { text: "utils", link: "/utils" },
         ],
       },
