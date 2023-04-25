@@ -1,3 +1,5 @@
+
+查看文档 <https://hxc1216.github.io/>
 ## 安装
 ```sh
 npm i util-xx
