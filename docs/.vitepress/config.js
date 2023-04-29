@@ -4,7 +4,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "util-xx",
   description: "工作中常用的工具方法，Array,Object,String,utils...",
-  base:"./", // 打包时开启
+  base:"/", // 打包时开启
   dest:"./dist",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config

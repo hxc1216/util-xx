@@ -1,3 +1,7 @@
+[![npm Status](https://img.shields.io/npm/v/util-xx.png)](https://img.shields.io/npm/v/util-xx)
+[![bundleSize Status](https://img.shields.io/bundlephobia/min/util-xx.png)](https://img.shields.io/bundlephobia/min/util-xx)
+[![downloads Status](https://img.shields.io/npm/dm/util-xx)](https://img.shields.io/npm/dm/util-xx)
+
 
 查看文档 <https://hxc1216.github.io/>
 ## 安装
@@ -7,11 +11,14 @@ npm i util-xx
 
 ## 使用
 ```sh
-import * as util from "util-xx"
+import { fnName } from "util-xx"
 ```
 
 ## 示例
-```sh
-console.log(util.hello())
->Hello World!
+```js
+import { getColor16 } from "util-xx"
+
+const color = getColor16()
+console.log(color); // #a2b5f8
+
 ```

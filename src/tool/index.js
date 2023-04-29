@@ -105,15 +105,16 @@ function base64ToBlob(base64) {
  * @returns
  */
 function downloadUrl(url) {
+  let argUrl = url;
   const isChrome = navigator.userAgent.toLowerCase().indexOf("chrome") > -1;
   const isSafari = navigator.userAgent.toLowerCase().indexOf("safari") > -1;
 
   if (isChrome || isSafari) {
     const link = document.createElement("a");
-    link.href = url;
+    link.href = argUrl;
 
     if (link.download !== undefined) {
-      const fileName = url.substring(url.lastIndexOf("/") + 1, url.length);
+      const fileName = argUrl.substring(url.lastIndexOf("/") + 1, argUrl.length);
       link.download = fileName;
     }
 
@@ -125,12 +126,12 @@ function downloadUrl(url) {
     }
   }
 
-  if (url.indexOf("?") === -1) {
-    url += "?download";
+  if (argUrl.indexOf("?") === -1) {
+    argUrl += "?download";
   }
 
-  window.open(url, "_self");
+  window.open(argUrl, "_self");
   return true;
 }
 
-export { getClient, isUrl, convertUrlToBase64, base64ToBlob,downloadUrl };
+export { getClient, isUrl, convertUrlToBase64, base64ToBlob, downloadUrl };
