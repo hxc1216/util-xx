@@ -13,7 +13,7 @@
     "docs:preview": "vitepress preview docs",
     "cover": "istanbul cover dist/utilx.min.cjs.js",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
-    "test": "jest --coverage && type ./coverage/lcov.info | coveralls"
+    "test": "jest --coverage && cat ./coverage/lcov.info | coveralls"
   },
   "keywords": [
     "javascript",
