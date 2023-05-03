@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="42" failures="0" errors="0" time="2.839">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2023-05-03T03:42:16" time="1.524" tests="4">
+    <testcase classname=" isFunction" name=" isFunction" time="0.003">
+    </testcase>
+    <testcase classname="debounce it should only call the function once after the delay" name="debounce it should only call the function once after the delay" time="0.004">
+    </testcase>
+    <testcase classname="throttle it should call the function at most once per delay interval" name="throttle it should call the function at most once per delay interval" time="0.001">
+    </testcase>
+    <testcase classname="throttle it should call the function immediately if the delay has passed" name="throttle it should call the function immediately if the delay has passed" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2023-05-03T03:42:16" time="1.531" tests="6">
+    <testcase classname=" getClient returns the correct client information" name=" getClient returns the correct client information" time="0.005">
+    </testcase>
+    <testcase classname=" returns true when given a valid URL" name=" returns true when given a valid URL" time="0.002">
+    </testcase>
+    <testcase classname=" returns false when given an invalid URL" name=" returns false when given an invalid URL" time="0">
+    </testcase>
+    <testcase classname=" returns false when given a URL with an unsupported protocol" name=" returns false when given a URL with an unsupported protocol" time="0.002">
+    </testcase>
+    <testcase classname="base64ToBlob should return a blob object with correct content type" name="base64ToBlob should return a blob object with correct content type" time="0.002">
+    </testcase>
+    <testcase classname="base64ToBlob should return a blob object with correct content" name="base64ToBlob should return a blob object with correct content" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="base64ToBlob" errors="0" failures="0" skipped="0" timestamp="2023-05-03T03:42:16" time="1.562" tests="9">
+    <testcase classname="base64ToBlob isArray returns true for an array" name="base64ToBlob isArray returns true for an array" time="0.004">
+    </testcase>
+    <testcase classname="base64ToBlob isArray returns false for an object" name="base64ToBlob isArray returns false for an object" time="0.001">
+    </testcase>
+    <testcase classname="base64ToBlob isArray returns false for a string" name="base64ToBlob isArray returns false for a string" time="0">
+    </testcase>
+    <testcase classname="base64ToBlob isArray returns false for a number" name="base64ToBlob isArray returns false for a number" time="0.001">
+    </testcase>
+    <testcase classname="base64ToBlob isArray returns false for null" name="base64ToBlob isArray returns false for null" time="0">
+    </testcase>
+    <testcase classname="base64ToBlob isArray returns false for undefined" name="base64ToBlob isArray returns false for undefined" time="0">
+    </testcase>
+    <testcase classname="arrayRef throws an error if argument is not an array" name="arrayRef throws an error if argument is not an array" time="0.027">
+    </testcase>
+    <testcase classname="arrayRef removes duplicate values from an array" name="arrayRef removes duplicate values from an array" time="0.002">
+    </testcase>
+    <testcase classname="arrayRef returns an empty array if input array is empty" name="arrayRef returns an empty array if input array is empty" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="isObject" errors="0" failures="0" skipped="0" timestamp="2023-05-03T03:42:16" time="1.561" tests="11">
+    <testcase classname="isObject isObject should return true when the input is an object" name="isObject isObject should return true when the input is an object" time="0.005">
+    </testcase>
+    <testcase classname="isObject isObject should return false when the input is an array" name="isObject isObject should return false when the input is an array" time="0.001">
+    </testcase>
+    <testcase classname="isObject isObject should return false when the input is a string" name="isObject isObject should return false when the input is a string" time="0">
+    </testcase>
+    <testcase classname="isObject isObject should return false when the input is a number" name="isObject isObject should return false when the input is a number" time="0.001">
+    </testcase>
+    <testcase classname="isObject isObject should return false when the input is null" name="isObject isObject should return false when the input is null" time="0">
+    </testcase>
+    <testcase classname="isObject isObject should return false when the input is undefined" name="isObject isObject should return false when the input is undefined" time="0">
+    </testcase>
+    <testcase classname="isObject isObject should return false when the input is a function" name="isObject isObject should return false when the input is a function" time="0.001">
+    </testcase>
+    <testcase classname="isEmptyObj isEmptyObj returns true for an empty object" name="isEmptyObj isEmptyObj returns true for an empty object" time="0">
+    </testcase>
+    <testcase classname="isEmptyObj isEmptyObj returns false for an object with properties" name="isEmptyObj isEmptyObj returns false for an object with properties" time="0.001">
+    </testcase>
+    <testcase classname="isEmptyObj isEmptyObj throws an error when called with a non-object argument" name="isEmptyObj isEmptyObj throws an error when called with a non-object argument" time="0.031">
+    </testcase>
+    <testcase classname=" should correctly deep copy an object" name=" should correctly deep copy an object" time="0.002">
+    </testcase>
+  </testsuite>
+  <testsuite name="humpToUnder" errors="0" failures="0" skipped="0" timestamp="2023-05-03T03:42:16" time="1.56" tests="12">
+    <testcase classname="humpToUnder humpToUnder converts camelCase to snake_case" name="humpToUnder humpToUnder converts camelCase to snake_case" time="0.005">
+    </testcase>
+    <testcase classname="humpToUnder humpToUnder converts PascalCase to snake_case" name="humpToUnder humpToUnder converts PascalCase to snake_case" time="0.001">
+    </testcase>
+    <testcase classname="humpToUnder humpToUnder handles numbers in the string" name="humpToUnder humpToUnder handles numbers in the string" time="0">
+    </testcase>
+    <testcase classname="humpToUnder humpToUnder throws an error if the argument is not a string" name="humpToUnder humpToUnder throws an error if the argument is not a string" time="0.028">
+    </testcase>
+    <testcase classname="underToHump underToHump converts camelCase to snake_case" name="underToHump underToHump converts camelCase to snake_case" time="0">
+    </testcase>
+    <testcase classname="underToHump underToHump throws an error if the argument is not a string" name="underToHump underToHump throws an error if the argument is not a string" time="0.001">
+    </testcase>
+    <testcase classname="getColor16 getColor16 should return a string with a length of 7 , #??????" name="getColor16 getColor16 should return a string with a length of 7 , #??????" time="0.001">
+    </testcase>
+    <testcase classname="getColor16 getColor16 should return a different color each time it is called" name="getColor16 getColor16 should return a different color each time it is called" time="0.001">
+    </testcase>
+    <testcase classname=" getQuery should extract query parameters from url string" name=" getQuery should extract query parameters from url string" time="0.001">
+    </testcase>
+    <testcase classname=" getQuery should handle url string without query parameters" name=" getQuery should handle url string without query parameters" time="0">
+    </testcase>
+    <testcase classname=" getQuery should handle url string with single query parameter" name=" getQuery should handle url string with single query parameter" time="0">
+    </testcase>
+    <testcase classname=" getQuery should handle url string with multiple parameters of the same name" name=" getQuery should handle url string with multiple parameters of the same name" time="0">
+    </testcase>
+  </testsuite>
+</testsuites>

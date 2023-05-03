@@ -47,7 +47,15 @@ function getQuery(url) {
     const item = arr[i].split("=");
     const key = item[0];
     const value = item[1];
-    result[key] = value;
+    if (Object.prototype.hasOwnProperty.call(result, key)) {
+      if (Array.isArray(result[key])) {
+        result[key].push(value);
+      } else {
+        result[key] = [result[key], value];
+      }
+    } else {
+      result[key] = value;
+    }
   }
   return result;
 }

@@ -12,6 +12,9 @@ function isObject(value) {
  * @returns
  */
 function isEmptyObj(obj) {
+  if (!isObject(obj)) {
+    throw new Error("The argument must be an object!");
+  }
   return Object.keys(obj).length === 0;
 }
 
