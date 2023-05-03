@@ -1,0 +1,88 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for utilx.min.cjs.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="prettify.css" />
+    <link rel="stylesheet" href="base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="index.html">All files</a> utilx.min.cjs.js</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>1/1</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">95.23% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>40/42</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">88.23% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>15/17</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>1/1</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input oninput="onInput()" type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line high'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">"use strict";function t(t){return"Array"===Object.prototype.toString.call(t).slice(8,-1)}function e(t){return"Object"===Object.prototype.toString.call(t).slice(8,-1)}exports.arrayRef=function(e){if(!t(e))throw new Error("The argument must be an array!");return[...new Set(e)]},exports.base64ToBlob=function(t){const e=t.dataURL.split(";base64,"),r=e[0].split(":")[1],n=window.atob(e[1]),o=n.length,i=new Uint8Array(o);for(let t=0;t&lt;o;t++)i[t]=n.charCodeAt(t);return new Blob([i],{type:r})},exports.convertUrlToBase64=<span class="fstat-no" title="function not covered" >function(t){return new Promise(((e,r)=&gt;{const n=new Image;n.crossOrigin="Anonymous",n.src=t,n.onload=()=&gt;{const t=document.createElement("canvas");t.width=n.width,t.height=n.height;t.getContext("2d").drawImage(n,0,0,n.width,n.height);const r=n.src.substring(n.src.lastIndexOf(".")+1).toLowerCase(),o=t.toDataURL(`image/${r}`);e({dataURL:o,type:`image/${r}`,ext:r})}}))},e</span>xports.debounce=function(t,e){let r;return(...n)=&gt;{const o=this;r&amp;&amp;clearTimeout(r),r=setTimeout((()=&gt;{t.apply(o,n),r=null}),e)}},exports.deepClone=function t(e){if("object"!=typeof e||null===e)return e;let r;return r=Array.isArray(e)<span class="branch-0 cbranch-no" title="branch not covered" >?[]:</span>{},Object.keys(e).forEach((n=&gt;{r[n]=t(e[n])})),r},exports.downloadUrl=<span class="fstat-no" title="function not covered" >function(t){let e=t;const r=navigator.userAgent.toLowerCase().indexOf("chrome")&gt;-1,n=navigator.userAgent.toLowerCase().indexOf("safari")&gt;-1;if(r||n){const r=document.createElement("a");if(r.href=e,void 0!==r.download){const n=e.substring(t.lastIndexOf("/")+1,e.length);r.download=n}if(document.createEvent){const t=document.createEvent("MouseEvents");return t.initEvent("click",!0,!0),r.dispatchEvent(t),!0}}return-1===e.indexOf("?")&amp;&amp;(e+="?download"),window.open(e,"_self"),!0},e</span>xports.getClient=function(){const t=navigator.userAgent,e=navigator.platform;return{trident:t.indexOf("Trident")&gt;-1,presto:t.indexOf("Presto")&gt;-1,webKit:t.indexOf("AppleWebKit")&gt;-1,gecko:t.indexOf("Gecko")&gt;-1&amp;&amp;-1===t.indexOf("KHTML"),mobile:!!t.match(/AppleWebKit.*Mobile.*/),ios:!!t.match(/i[^;]+;( U;)? CPU.+Mac OS X/),android:t.indexOf("Android")&gt;-1||t.indexOf("Linux")&gt;-1,iPhone:t.indexOf("iPhone")&gt;-1,iPad:t.indexOf("iPad")&gt;-1,weixin:t.indexOf("MicroMessenger")&gt;-1,webApp:-1===t.indexOf("Safari"),UCB:"UCBrowser"===t.match(/UCBrowser/i),QQB:"MQQBrowser"===t.match(/MQQBrowser/i),win:e.indexOf("Win")&gt;-1,mac:e.indexOf("Mac")&gt;-1}},exports.getColor16=function(){return`#${Math.random().toString(16).slice(-6)}`},exports.getQuery=function(t){const e=t.substr(t.indexOf("?")+1).split("&amp;"),r={};for(let t=0;t&lt;e.length;t++){const n=e[t].split("="),o=n[0],i=n[1];Object.prototype.hasOwnProperty.call(r,o)?Array.isArray(r[o])<span class="branch-0 cbranch-no" title="branch not covered" >?r[o].push(i):</span>r[o]=[r[o],i]:r[o]=i}return r},exports.humpToUnder=function(t){if("string"!=typeof t)throw new Error("The argument must be String");return t.match(/^[a-z][a-z0-9]+|[A-Z][a-z0-9]*/g).join("_").toLowerCase()},exports.isArray=t,exports.isEmptyObj=function(t){if(!e(t))throw new Error("The argument must be an object!");return 0===Object.keys(t).length},exports.isFunction=function(t){return"Function"===Object.prototype.toString.call(t).slice(8,-1)},exports.isObject=e,exports.isUrl=function(t){let e;try{e=new URL(t)}catch(t){return!1}return"http:"===e.protocol||"https:"===e.protocol},exports.throttle=function(t,e){let r;return(...n)=&gt;{const o=this;r||(r=setTimeout((()=&gt;{t.apply(o,n),clearTimeout(r),r=null}),e))}},exports.underToHump=function(t){if("string"!=typeof t)throw new Error("The argument must be String");return t.replace(/\_(\w)/g,((t,e)=&gt;e.toUpperCase()))};
+&nbsp;</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2023-05-03T08:34:48.515Z
+            </div>
+        <script src="prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="sorter.js"></script>
+        <script src="block-navigation.js"></script>
+    </body>
+</html>
+    

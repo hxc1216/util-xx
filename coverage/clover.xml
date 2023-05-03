@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1683102888531" clover="3.2.0">
+  <project timestamp="1683102888531" name="All files">
+    <metrics statements="1" coveredstatements="1" conditionals="42" coveredconditionals="40" methods="17" coveredmethods="15" elements="60" coveredelements="56" complexity="0" loc="1" ncloc="1" packages="1" files="1" classes="1"/>
+    <file name="utilx.min.cjs.js" path="E:\util-test\dist\utilx.min.cjs.js">
+      <metrics statements="1" coveredstatements="1" conditionals="42" coveredconditionals="40" methods="17" coveredmethods="15"/>
+      <line num="1" count="1" type="cond" truecount="40" falsecount="2"/>
+    </file>
+  </project>
+</coverage>
