@@ -1,6 +1,8 @@
 [![npm Status](https://img.shields.io/npm/v/util-xx.png)](https://img.shields.io/npm/v/util-xx)
 [![bundleSize Status](https://img.shields.io/bundlephobia/min/util-xx.png)](https://img.shields.io/bundlephobia/min/util-xx)
 [![downloads Status](https://img.shields.io/npm/dm/util-xx)](https://img.shields.io/npm/dm/util-xx)
+[![coverage Status]([https://img.shields.io/npm/dm/util-xx](https://img.shields.io/coverallsCoverage/github/hxc1216/util-xx?branch=dev))]([https://img.shields.io/npm/dm/util-xx](https://img.shields.io/coverallsCoverage/github/hxc1216/util-xx?branch=dev))
+
 
 
 查看文档 <https://hxc1216.github.io/>
