@@ -18,7 +18,7 @@ jobs:
       - name: Build
         run: npm run build
       - name: Publish to NPM
-        uses: actions/npm@v1
+        uses: xin216/util-xx/npm@v1
         with:
           args: publish
         env:
