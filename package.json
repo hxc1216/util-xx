@@ -4,6 +4,7 @@
   "description": "the util funcitons for javascript",
   "main": "dist/utilx.min.cjs.js",
   "module": "dist/utilx.min.es.js",
+  "browser":"dist/utilx.min.umd.js",
   "unpkg": "dist/utilx.min.umd.js",
   "type": "module",
   "scripts": {
